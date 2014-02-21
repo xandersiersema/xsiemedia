@@ -1,0 +1,12 @@
+.topbar {
+	position: fixed;
+	left: 0; top: 0;
+	background-color: black;
+	heigth: 50px;
+	min-width: 960px;
+}
+
+.topbar-inner {
+	width: 960px;
+	display: inline-block;
+}
