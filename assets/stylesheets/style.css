@@ -7,7 +7,7 @@ body {
   padding: 0; }
 
 .wrapper {
-  min-width: 320px;
+  min-width: 280px;
   max-width: 960px;
   margin: auto;
   padding: 50px 20px 0 20px; }
