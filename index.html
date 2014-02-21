@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Xsie Media</title>
+    <title>XsieMedia</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   </head>
   <body>
     <div class="topbar">
-      <div class="topbar-inner"></div>
+      <div class="topbar-inner">
+        <ul class="topbar-menu">
+          <li class="topbar-menu-item"><a href="#home" id="navigation-home">Home</a></li>
+          <li class="topbar-menu-item"><a href="#projecten" id="navigation-projecten">Projecten</a></li>
+          <li class="topbar-menu-item"><a href="#contact" id="navigation-contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
     <div class='wrapper'>
+      <img src="assets/images/XsieMedia.png" class="logo" id="home" />
+      <h1 class="slogan">Xsie Media is een klein bedrijfje in Groningen wat iets doet met bier.</h1>
+
+      <iframe width="960" height="540" src="https://www.youtube.com/embed/67-LFqwMnxo" frameborder="0" allowfullscreen></iframe>
+
+      <h1 id="contact">Contact</h1>
+      <p>Hier komen Xander zijn contact gegevens te staan...</p>
     </div>
   </body>
 </html>
+
+<script type="text/javascript">
+  $("#navigation-home").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#home").offset().top
+    }, 500);
+  });
+
+  $("#navigation-projecten").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#projecten").offset().top
+    }, 500);
+  });
+
+  $("#navigation-contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 500);
+  });
+</script>

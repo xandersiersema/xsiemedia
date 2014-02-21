@@ -2,11 +2,39 @@
 	position: fixed;
 	left: 0; top: 0;
 	background-color: black;
-	heigth: 50px;
-	min-width: 960px;
+  height: 50px;
+	width: 100%;
 }
 
 .topbar-inner {
 	width: 960px;
-	display: inline-block;
+  margin: 0 auto;
+}
+
+.topbar-menu {
+  list-style: none;
+}
+
+.topbar-menu-item {
+  float: left;
+  padding-left: 20px;
+
+  a {
+    color: white;
+
+    &:hover {
+      border-bottom: 1px solid #9900cc;
+    }
+  }
+}
+
+.logo {
+  width: 300px;
+  margin: auto;
+  display: block;
+  padding-top: 10px;
+}
+
+.slogan {
+  font-weight: lighter;
 }
