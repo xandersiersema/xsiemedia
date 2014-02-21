@@ -16,3 +16,5 @@
 /tmp
 .sass-cache/
 node_modules/
+
+assets/stylesheets/style.css
